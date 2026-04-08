@@ -11,6 +11,7 @@ matrix = [
 ]
 transpose = list(zip(*matrix))
 print(transpose)
+
 this converts rows into column efficiently
 
 # 2. parallel sorting using zip()
@@ -18,12 +19,14 @@ names = ["A", "B", "C"]
 marks = [70, 90, 80]
 sorted_data = sorted(zip(marks, names), reverse=True)
 print(sorted_data)
+
 this sort one list based on another
 
 # 3. pairwise comparison
 nums = [10, 20, 15, 25]
 comparisons = [(a, b, b - a) for a, b in zip(nums, nums[1:])]
 print(comparisons)
+
 this used in time-series & trend analysis
 
 # 4. unzipping trick 
@@ -31,6 +34,7 @@ pairs = [(1, 'a'), (2, 'b'), (3, 'c')]
 numbers, letters = zip(*pairs)
 print(numbers)
 print(letters)
+
 this splits structures data 
 
 # 5. Dictionary inversion 
@@ -38,6 +42,7 @@ data = {"a": 1, "b": 2}
 
 inverted = dict(zip(data.values(), data.keys()))
 print(inverted)
+
 this reverse key-value mapping 
 
 # 6. Combining More Than Two Iterables
@@ -47,6 +52,7 @@ c = [5, 6]
 
 result = list(zip(a, b, c))
 print(result)
+
 this Multi-dimensional data grouping
 
 # 7. Handling Unequal Lengths (Advanced)
